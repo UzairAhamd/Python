@@ -148,7 +148,13 @@ print("hello #21".isprintable(),"hello\n there".isprintable())		#carriage return
 print("   ".isspace())		#check if all the characters are whitespaces
 print("Hello And, Welcome!".istitle())		#Check if each word start with an upper letter and the rest of it are lower letters
 print("THIS IS NOW!".isupper())			#only alphabets are checked
-print("@".join(("Horn","Peter"."vicky")))	#output is Horn@Peter@vicky    ##takes all itmes in an iterable and joins them into one string with 
+print("@".join(("Horn","Peter","vicky"))) #output is Horn@Peter@vicky ##takes all itmes in an iterable and joins them into one string with specified serparator string
+print("TEST".join({"name":"John","country":"Norway"})	#output is nameTESTcountry	##returned values are the keys not the values
+print("banana".ljust(20),"is my favorite fruit.")	#returns a 20 character long left justified word banana with 14 whitespaces to the right
+print("banana".ljust(20,"O"),"is my favorite fruit.")	#returns a 20 character long left justified word banana with 14 O to the right
+print("Helo world".lower())	#lower the string case, names and symbols are ignored
+print("you know","   banana   ".lstrip(),"is my favorite") 	#removes spaces to the left of the string
+print("you you you yoooo ...banana".lstrip("yuo. "))
 
 
 
