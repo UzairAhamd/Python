@@ -154,8 +154,14 @@ print("banana".ljust(20),"is my favorite fruit.")	#returns a 20 character long l
 print("banana".ljust(20,"O"),"is my favorite fruit.")	#returns a 20 character long left justified word banana with 14 O to the right
 print("Helo world".lower())	#lower the string case, names and symbols are ignored
 print("you know","   banana   ".lstrip(),"is my favorite") 	#removes spaces to the left of the string
-print("you you you yoooo ...banana".lstrip("yuo. "))
-
+print("you you you yoooo ...banana".lstrip("yuo. "))		#removes characters before
+print("Good night Sam!".translate("Good night Sam!".maketrans("mSa","eJo","odnght")))	#replaces first string characters with second in the order as 
+      											#in the main string
+      											#but removes odnght characters returning: G i Joe!
+      											#maketrans return a mapping table(dictionary in unicode) and 
+      											#translate do replacing
+print("I could eat bananas all day".partition("bananas"))	# searches for the fist occurence and returns a tuple ('I could eat ', 'bananas', ' all day')
+print("I could eat bananas all day".partition("bananas"))	#returns a tuple ('I could eat bananas all day', '', '')
 
 
 
