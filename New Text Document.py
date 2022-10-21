@@ -78,5 +78,23 @@ print(a.center(20)      # taking up the space of 10 characters with Hello world 
 print.center(20,"O")        # padding with O now character
 print(a.count("l"))
 print(a.count("l",2,-2)        #from third member till the second last
-print("my name is Ståle".encode())   #encodes the string, using the specified encoding, if no encoding is specified, UTF-8 will be used
+
+txt = "My name is Ståle."
+print("my name is Ståle.".encode())   #encodes the string, using the specified encoding, if no encoding is specified, UTF-8 will be used
                                      #syntax is: encode(encoding,errors) default encoding="UTF-8" while errors could be 'backslashreplace' 'ignore' 'namereplace' 'strict' 'replace' 'xmlcharrefreplace'
+print(txt.encode(encoding="ascii",errors="backslashreplace"))         #b'My name is St\\xe5le'
+print(txt.encode(encoding="ascii",errors="ignore"))                   #b'My name is Stle'
+print(txt.encode(encoding="ascii",errors="namereplace"))              #b'My name is St\\N{LATIN SMALL LETTER A WITH RING ABOVE}le'
+print(txt.encode(encoding="ascii",errors="replace"))                  #b'My name is St?le'
+print(txt.encode(encoding="ascii",errors="xmlcharrefreplace"))        #b'My name is Ståle'
+
+print(txt.endswith(".")												#check if the string ends with a dot
+print(txt.endswith("my world.",5,11))
+			
+print("H\te\tl\tl\to")												# default tab size is 8
+print("H\te\tl\tl\to".expandable(2))					# sets the tab to 2 whitespaces
+
+txt="Hello and welcome here"
+print(txt.find("welcome")											#finds the first occurence of value, returns -1 if not, same as index() but it does not raise an exception if not found
+print(txt.find("welcome",2,9)
+
