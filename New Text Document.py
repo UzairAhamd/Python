@@ -95,6 +95,6 @@ print("H\te\tl\tl\to")												# default tab size is 8
 print("H\te\tl\tl\to".expandable(2))					# sets the tab to 2 whitespaces
 
 txt="Hello and welcome here"
-print(txt.find("welcome")											#finds the first occurence of value, returns -1 if not, same as index() but it does not raise an exception if not found
+print(txt.find("welcome")		#finds the first occurence of value, returns -1 if not, same as index() but it does not raise an exception if not found
 print(txt.find("welcome",2,9)
 
