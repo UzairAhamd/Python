@@ -70,3 +70,13 @@ print("we are \"vikings\" from the north")
 # \f formfeed
 # \ooo octal value
 # \xhh hex value
+
+#String built-in methods
+print(a.capitalize())     #first character in upper case and rest in lower case, but if the first charater is a number it won't capitalize the number
+print(a.casefold())     # returns a string with all lower, more stronger than lower() method
+print(a.center(20)      # taking up the space of 10 characters with Hello world in the middle, by default space is the padding
+print.center(20,"O")        # padding with O now character
+print(a.count("l"))
+print(a.count("l",2,-2)        #from third member till the second last
+print("my name is Ståle".encode())   #encodes the string, using the specified encoding, if no encoding is specified, UTF-8 will be used
+                                     #syntax is: encode(encoding,errors) default encoding="UTF-8" while errors could be 'backslashreplace' 'ignore' 'namereplace' 'strict' 'replace' 'xmlcharrefreplace'
