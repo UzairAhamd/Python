@@ -102,3 +102,49 @@ print(txt.find("welcome",2,9)
 print("For only {price:.2f} dollars".format(price=58))    # returns the formatted string, forrmats the specified value(s) and insert 
                                                          #  them in the string's placeholders defined by {}
 # placeholders can be identified using the named indexes {price}, numbered indexes{0} or even empty placeholders{}
+
+txt1 = "My name is {fname}, I'm {age}".format(fname = "John", age = 36)
+txt2 = "My name is {0}, I'm {1}".format("John",36)
+txt3 = "My name is {}, I'm {}".format("John",36)
+      
+'''
+:< left aligns the result within the available space
+:> right aligns the result within the available space
+:^ center aligns the result within the available space
+:= places the sign to the left most position
+:+ use a plus sign to indicate if the result is positive or negative
+:- use a minus sign for negative values only
+:  use a space to insert an extra space before positive numbers(and a minus sign before negative numbers)
+:, use a coomma as a thousand separator
+:_ use an underscore as a thousand separator
+:b binary format
+:c converts the value into the corresponding unicode character
+:d decimal format
+:e scientic format, with a lower case e
+:E scientic format, with an upper case E
+:f fix point number format
+:F fix point number format(in uppercase format show inf and nan as INF and NAN)
+:g General fomat
+:G General fomrat(using an upper case E for scientic notations)
+:o octal format
+:x hex format, lower case
+:X hex format, upper case
+:n number format
+:% percentage format
+'''
+## format_map() ---formats specified values in a string to return a dictionary key's value and it doesn't create a new dictionary
+
+
+print("hello world".index("e")
+print("Company12".isalnum())			#space !#%&? etc. aren't alphanumeric
+print("CompanyX".isalpha())			#if alphabets
+print("Company234".isascii())			#check if all are ascii
+print("\u0030".isdecimal(), "\u0047".isdecimal())	#checks if the unicode is of a decimal(0-9)  ## the output is True and False for 3 and G
+print("5080".isdigit(),"\u00B2".isdigit())		#checks if the all are digits  ## second one is exponent of 2 and it gives true
+print("Demo".isidentifier())			#only if alphanumeric or underscore but not the numberstart and with any space in it
+print("hello world".islower())		#numbers symbols and spaces aren't checked only alphabets
+print("3434".isnumeric(),"\u00B2".isnumeric()) 	#-1 and 4.5 aren't numeric bcz of - and . while exponents like 3/5 or 3 are numeric
+print("hello #21".isprintable(),"hello\n there".isprintable())		#carriage return and line feed are not printable examples
+print("   ".isspace())		#check if all the characters are whitespaces
+
+      
