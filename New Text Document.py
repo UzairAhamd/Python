@@ -81,7 +81,8 @@ print(a.count("l",2,-2)        #from third member till the second last
 
 txt = "My name is Ståle."
 print("my name is Ståle.".encode())   #encodes the string, using the specified encoding, if no encoding is specified, UTF-8 will be used
-                                     #syntax is: encode(encoding,errors) default encoding="UTF-8" while errors could be 'backslashreplace' 'ignore' 'namereplace' 'strict' 'replace' 'xmlcharrefreplace'
+                                     #syntax is: encode(encoding,errors) default encoding="UTF-8" while errors could be 'backslashreplace'
+                                                                              'ignore' 'namereplace' 'strict' 'replace' 'xmlcharrefreplace'
 print(txt.encode(encoding="ascii",errors="backslashreplace"))         #b'My name is St\\xe5le'
 print(txt.encode(encoding="ascii",errors="ignore"))                   #b'My name is Stle'
 print(txt.encode(encoding="ascii",errors="namereplace"))              #b'My name is St\\N{LATIN SMALL LETTER A WITH RING ABOVE}le'
@@ -98,3 +99,6 @@ txt="Hello and welcome here"
 print(txt.find("welcome")		#finds the first occurence of value, returns -1 if not, same as index() but it does not raise an exception if not found
 print(txt.find("welcome",2,9)
 
+print("For only {price:.2f} dollars".format(price=58))    # returns the formatted string, forrmats the specified value(s) and insert 
+                                                         #  them in the string's placeholders defined by {}
+# placeholders can be identified using the named indexes {price}, numbered indexes{0} or even empty placeholders{}
